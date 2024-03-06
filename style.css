@@ -22,12 +22,12 @@ body {
 }
 
 .profile-photo {
-    flex: 0 0 100px; /* 写真の幅を固定 */
+    flex: 0 0 50px; /* 写真の幅を固定 */
     margin-right: 20px; /* 写真とテキストの間にマージンを追加 */
 }
 
 .profile-photo img {
-    width: 100px; /* 写真の幅を設定 */
+    width: 50px; /* 写真の幅を設定 */
     height: auto; /* 高さを自動調整 */
     border-radius: 50%; /* 写真を丸くする */
     display: block; /* ブロック要素にする */
