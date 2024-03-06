@@ -33,10 +33,6 @@ body {
     display: block; /* ブロック要素にする */
 }
 
-.profile-text {
-    flex: 1; /* 残りのスペースをテキスト部分が占める */
-}
-
 ul {
     list-style-type: none;
     padding: 0;
