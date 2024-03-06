@@ -21,11 +21,13 @@ body {
     padding: 20px;
     width: 50%;
 }
-
 .profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100px; /* 幅の設定 */
+    height: auto; /* 高さを自動調整にする */
+    border-radius: 50%; /* 写真を丸くする */
+    display: block; /* ブロック要素にする */
+    margin-left: auto; /* 左マージン自動 */
+    margin-right: auto; /* 右マージン自動 */
 }
 
 ul {
