@@ -18,12 +18,12 @@ body {
 }
 .profile {
     display: flex;
-    align-items: left;
+    align-items: flex-start; /* コンテンツをコンテナの開始位置に揃える */
 }
 
 .profile-photo {
     flex: 0 0 50px; /* 写真の幅を固定 */
-    margin-right: 20px; /* 写真とテキストの間にマージンを追加 */
+    margin-right: 20px; /* 写真とテキストの間に適切なマージンを設定 */
 }
 
 .profile-photo img {
@@ -31,7 +31,6 @@ body {
     height: auto; /* 高さを自動調整 */
     border-radius: 50%; /* 写真を丸くする */
     display: block; /* ブロック要素にする */
-    margin-right: auto; /* 右マージンを自動にする */
 }
 
 .profile-text {
