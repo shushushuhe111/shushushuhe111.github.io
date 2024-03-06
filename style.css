@@ -27,9 +27,11 @@ body {
 }
 
 .profile-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 100px; /* 写真の幅を設定 */
+    height: auto; /* 高さを自動調整 */
+    border-radius: 50%; /* 写真を丸くする */
+    display: block; /* ブロック要素にする */
+    margin-right: auto; /* 右マージンを自動にする */
 }
 
 .profile-text {
