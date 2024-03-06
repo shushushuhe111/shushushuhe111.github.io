@@ -41,3 +41,27 @@ a {
     text-decoration: none;
     color: #1a0dab;
 }
+/* 既存のスタイルに追加 */
+
+/* 小さい画面（スマートフォンなど）用のスタイル */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile, .career {
+        width: 100%;
+    }
+
+    .profile img {
+        margin: 0 auto; /* 中央に配置 */
+    }
+}
+
+/* タブレットサイズのスタイル */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
