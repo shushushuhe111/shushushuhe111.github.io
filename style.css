@@ -16,10 +16,6 @@ body {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.profile {
-    display: flex;
-    align-items: flex-start; /* コンテンツをコンテナの開始位置に揃える */
-}
 
 .profile-photo {
     flex: 0 0 50px; /* 写真の幅を固定 */
