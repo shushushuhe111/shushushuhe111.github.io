@@ -16,18 +16,24 @@ body {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.profile, .career {
-    padding: 20px;
-    width: 50%;
+.profile {
+    display: flex;
+    align-items: center;
 }
-.profile img {
-    width: 100px; /* 幅の設定 */
-    height: auto; /* 高さを自動調整にする */
-    border-radius: 50%; /* 写真を丸くする */
-    display: block; /* ブロック要素にする */
-    margin-left: auto; /* 左マージン自動 */
-    margin-right: auto; /* 右マージン自動 */
+
+.profile-photo {
+    flex: 0 0 100px; /* 写真の幅を固定 */
+    margin-right: 20px; /* 写真とテキストの間にマージンを追加 */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-text {
+    flex: 1; /* 残りのスペースをテキスト部分が占める */
 }
 
 ul {
