@@ -28,7 +28,7 @@ body {
 
 .profile-photo img {
     width: 50px; /* 写真の幅を設定 */
-    height: auto; /* 高さを自動調整 */
+    height: 50px; /* 高さを自動調整 */
     border-radius: 50%; /* 写真を丸くする */
     display: block; /* ブロック要素にする */
 }
