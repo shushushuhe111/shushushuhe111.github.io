@@ -26,11 +26,13 @@ body {
     margin-right: 20px; /* 写真とテキストの間に適切なマージンを設定 */
 }
 
-.profile-photo img {
-    width: 50px; /* 写真の幅を設定 */
-    height: auto; /* 高さを自動調整 */
+.profile img {
+    width: 100px; /* 幅の設定 */
+    height: auto; /* 高さを自動調整にする */
     border-radius: 50%; /* 写真を丸くする */
     display: block; /* ブロック要素にする */
+    margin-left: auto; /* 左マージン自動 */
+    margin-right: auto; /* 右マージン自動 */
 }
 
 ul {
