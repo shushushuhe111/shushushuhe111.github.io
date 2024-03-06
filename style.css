@@ -23,7 +23,7 @@ body {
 }
 
 .profile img {
-    width: 20px; /* 写真の幅を50pxに設定 */
+    width: 10px; /* 写真の幅を50pxに設定 */
     height: auto; /* 高さは幅に応じて自動調整 */
     border-radius: 25% 10%;
 }
