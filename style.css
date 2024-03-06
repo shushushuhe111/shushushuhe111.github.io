@@ -1,55 +1,39 @@
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
     background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     text-align: center;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
 }
 
-header nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 60px;
-    margin-top: 60px;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-footer {
-    text-align: center;
+.left-column, .right-column {
+    flex: 1;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    max-width: 50%;
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.left-column h1, .right-column h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
 }
