@@ -14,27 +14,18 @@ body {
     display: flex;
     width: 80%;
     background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-.profile {
-    display: flex;
-    align-items: flex-start; /* コンテンツをコンテナの開始位置に揃える */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-photo {
-    flex: 0 0 20px; /* 写真の幅を固定 */
-    margin-right: 20px; /* 写真とテキストの間に適切なマージンを設定 */
+.profile, .career {
+    padding: 20px;
+    width: 50%;
 }
 
-.profile-photo img {
-    width: 20px; /* 写真の幅を設定 */
-    height: 20px; /* 高さを自動調整 */
-    border-radius: 50%; /* 写真を丸くする */
-    display: block; /* ブロック要素にする */
-}
-
-.profile-text {
-    flex: 1; /* 残りのスペースをテキスト部分が占める */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 ul {
@@ -50,6 +41,18 @@ a {
     text-decoration: none;
     color: #1a0dab;
 }
+このコードは、プロフィールと経歴が並列に表示されるレイアウトを持つWebページを生成します。写真、プロフィール、学歴・職歴、SNSリンクの各セクションに必要な情報を追加してください。また、CSSは基本的なスタイルを提供しますが、必要に応じてカスタマイズして独自のスタイルを作成してください。
+
+User
+先ほどのはPC用ですか？
+ChatGPT
+はい、先ほど提供したHTMLとCSSのコードは主にPC用のデザインに焦点を当てています。しかし、現代のウェブデザインでは、異なるデバイス（特にスマートフォンやタブレット）に対応するためにレスポンシブデザインが重要です。これは、デバイスの画面サイズに応じてコンテンツのレイアウトが調整されるデザインのことを指します。
+
+レスポンシブデザインを実現するためには、CSSにメディアクエリを追加して、異なる画面サイズに応じてスタイルを変更する必要があります。以下は、レスポンシブデザインに対応したCSSの例です。
+
+レスポンシブCSSの追加
+css
+Copy code
 /* 既存のスタイルに追加 */
 
 /* 小さい画面（スマートフォンなど）用のスタイル */
