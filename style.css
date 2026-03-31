@@ -59,8 +59,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
 }
 
 .sns-icons a:hover {
@@ -72,6 +73,7 @@ a {
     height: 24px;
     object-fit: contain;
     border-radius: 0;
+    display: block;
 }
 
 /* 小さい画面（スマートフォンなど）用のスタイル */
