@@ -76,6 +76,12 @@ a {
     display: block;
 }
 
+.icon-x { width: 24px; height: 24px; }
+.icon-note { width: 24px; height: 24px; }
+.icon-linkedin { width: 28px; height: 28px; }
+.icon-wantedly { width: 24px; height: 24px; }
+.icon-youtrust { width: 20px; height: 20px; }
+
 /* 小さい画面（スマートフォンなど）用のスタイル */
 @media (max-width: 768px) {
     .container {
