@@ -1,98 +1,159 @@
-body {
-    font-family: 'Helvetica Neue', sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    background-color: #f0ede8;
+    color: #1a1a1a;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
 .container {
     display: flex;
-    width: 80%;
+    width: 100%;
+    max-width: 860px;
+    min-height: 500px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 左カラム */
 .profile {
-    flex: 0 0 30%;
-    padding: 20px;
+    width: 260px;
+    flex-shrink: 0;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.career {
-    flex: 0 0 70%;
-    padding: 20px;
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid #444;
 }
 
-.profile img {
-    width: 40%;
-    height: auto;
-    border-radius: 25% 10%;
+.profile h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #1a0dab;
+.affiliation {
+    font-size: 0.75rem;
+    color: #999;
+    line-height: 1.7;
 }
 
 /* SNSアイコン */
 .sns-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 16px;
+    gap: 12px;
+    margin-top: 8px;
+    align-items: center;
 }
 
+.sns-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
 
 .sns-icons a:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .sns-icons img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    border-radius: 0;
     display: block;
+    object-fit: contain;
+    /* サイズはinline styleで個別指定 */
 }
 
-.icon-x { width: 20px; height: 20px; }
-.icon-linkedin { width: 28px; height: 28px; }
-.icon-youtrust { width: 28px; height: 28px; }
-.icon-wantedly { width: 26px; height: 26px; }
-.icon-note { width: 26px; height: 26px; }
+/* 右カラム */
+.career {
+    flex: 1;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
-/* 小さい画面（スマートフォンなど）用のスタイル */
-@media (max-width: 768px) {
+.section h2 {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #aaa;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section ul li {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.period {
+    font-size: 0.72rem;
+    color: #aaa;
+    white-space: nowrap;
+    min-width: 80px;
+}
+
+.detail {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* スマホ対応 */
+@media (max-width: 640px) {
     .container {
         flex-direction: column;
-        width: 100%;
     }
 
-    .profile, .career {
+    .profile {
         width: 100%;
+        padding: 32px 24px;
     }
 
-    .profile img {
-        margin: 0 auto;
+    .career {
+        padding: 32px 24px;
+    }
+
+    .section ul li {
+        flex-direction: column;
+        gap: 4px;
     }
 }
 
-/* タブレットサイズのスタイル */
 @media (max-width: 1024px) {
     .container {
-        width: 90%;
+        max-width: 90%;
     }
 }
