@@ -55,13 +55,10 @@ a {
     margin-top: 16px;
 }
 
-.sns-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    overflow: hidden;
+.sns-icons img {
+    object-fit: contain;
+    border-radius: 0;
+    display: block;
 }
 
 .sns-icons a:hover {
