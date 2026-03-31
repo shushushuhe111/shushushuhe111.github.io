@@ -59,8 +59,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: #f0f0f0;
     transition: background-color 0.2s;
@@ -71,8 +71,8 @@ a {
 }
 
 .sns-icons img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     border-radius: 0;
 }
