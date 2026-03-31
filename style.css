@@ -76,11 +76,11 @@ a {
     display: block;
 }
 
-.icon-x { width: 24px; height: 24px; }
-.icon-note { width: 24px; height: 24px; }
+.icon-x { width: 20px; height: 20px; }
 .icon-linkedin { width: 28px; height: 28px; }
-.icon-wantedly { width: 24px; height: 24px; }
-.icon-youtrust { width: 20px; height: 20px; }
+.icon-youtrust { width: 28px; height: 28px; }
+.icon-wantedly { width: 26px; height: 26px; }
+.icon-note { width: 26px; height: 26px; }
 
 /* 小さい画面（スマートフォンなど）用のスタイル */
 @media (max-width: 768px) {
