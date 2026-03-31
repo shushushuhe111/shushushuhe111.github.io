@@ -55,11 +55,6 @@ a {
     margin-top: 16px;
 }
 
-.sns-icons img {
-    object-fit: contain;
-    border-radius: 0;
-    display: block;
-}
 
 .sns-icons a:hover {
     opacity: 0.7;
