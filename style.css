@@ -1,170 +1,101 @@
-:root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #888;
-    --accent: #1a1a1a;
-    --border: #e8e8e8;
-    --profile-bg: #f7f7f7;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
+body {
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
+    color: #333;
+    background-color: #f4f4f4;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    max-width: 860px;
-    min-height: 480px;
-    border: 1px solid var(--border);
+    width: 80%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* プロフィール左カラム */
 .profile {
-    width: 260px;
-    flex-shrink: 0;
-    background: var(--profile-bg);
-    padding: 48px 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    flex: 0 0 30%;
+    padding: 20px;
 }
 
-.profile-img-wrap {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 8px;
+.career {
+    flex: 0 0 70%;
+    padding: 20px;
 }
 
-.profile-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.profile img {
+    width: 40%;
+    height: auto;
+    border-radius: 25% 10%;
 }
 
-.profile h1 {
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.3;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.affiliation {
-    font-size: 0.78rem;
-    color: var(--muted);
-    line-height: 1.7;
-    font-weight: 300;
+ul li {
+    margin-bottom: 10px;
 }
 
-.sns {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 8px;
-}
-
-.sns-link {
+a {
     text-decoration: none;
-    color: var(--text);
-    font-size: 0.8rem;
-    font-weight: 400;
+    color: #1a0dab;
+}
+
+/* SNSアイコン */
+.sns-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.sns-icons a {
     display: flex;
     align-items: center;
-    gap: 6px;
-    opacity: 0.6;
-    transition: opacity 0.2s;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
 }
 
-.sns-link::before {
-    content: '↗';
-    font-size: 0.7rem;
+.sns-icons a:hover {
+    background-color: #ddd;
 }
 
-.sns-link:hover {
-    opacity: 1;
+.sns-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 0;
 }
 
-/* 経歴右カラム */
-.career {
-    flex: 1;
-    padding: 48px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.section h2 {
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 20px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-}
-
-.section ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.section ul li {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 16px;
-    align-items: baseline;
-}
-
-.period {
-    font-size: 0.75rem;
-    color: var(--muted);
-    font-weight: 300;
-    white-space: nowrap;
-}
-
-.detail {
-    font-size: 0.88rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-/* スマホ対応 */
-@media (max-width: 640px) {
+/* 小さい画面（スマートフォンなど）用のスタイル */
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
-        border: none;
-    }
-
-    .profile {
         width: 100%;
-        padding: 32px 24px;
     }
 
-    .career {
-        padding: 32px 24px;
+    .profile, .career {
+        width: 100%;
     }
 
-    .section ul li {
-        grid-template-columns: 1fr;
-        gap: 4px;
+    .profile img {
+        margin: 0 auto;
+    }
+}
+
+/* タブレットサイズのスタイル */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
     }
 }
