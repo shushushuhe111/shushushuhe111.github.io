@@ -42,6 +42,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 8px;
+    border: 0.5px solid #1a1a1a;
 }
 
 .profile h1 {
