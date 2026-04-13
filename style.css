@@ -121,7 +121,8 @@ body {
     font-size: 0.72rem;
     color: #aaa;
     white-space: nowrap;
-    min-width: 80px;
+    width: 140px;
+    flex-shrink: 0;
 }
 
 .detail {
